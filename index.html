@@ -2,8 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
   </head>
 
-  <body></body>
+  
+  <body>
+    <div class="title">
+        <h1>Weather App</h1>
+    </div>
+    <div id="weather-container">
+        <div id="element-container" style="display: none;">
+            <div>
+                <span class="weather-output" id="location"></span>
+            </div>
+                <span class="weather-output" id="main-temperature"></span>
+                <span class="weather-output" id ="weather-main"></span>
+                <img class="weather-output" id="weather-icon">
+            </div>
+            <div>
+                <span class="weather-output" id="feels-like"></span>
+                <span class="weather-output" id="humidity"></span>
+            </div>
+            <div>
+                <span class="weather-output" id="wind"></span>
+                <span class="weather-output" id="wind-gust"></span>
+            </div>            
+        </div>
+    </div>
+    <div class="input-container">
+        <label for="city">Choose a city:</label>
+        <select id="city" name="city">
+            <option value=""></option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+        </select>
+        <button id="get-weather-btn">Get Weather</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
